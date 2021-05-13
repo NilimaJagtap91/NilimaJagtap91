@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .blur5 {
+      height: 300px;
+      width: 250px;
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+    }
+    .contrast5 {
+      height: 300px;
+      width: 250px;
+
+      filter: brightness(0.8);
+    }
+    .saturate5 {
+      height: 300px;
+      width: 250px;
+    filter: saturate(2);
+    }
+    ul {
+        display: flex;
+    }
+    li{
+        margin: 2px;
+    }
+  </style>
+  <body>
+    <h3>orginal Pic</h3>
+    <img src="/img/background1.jpg" height="300px" width="250px" alt="" />
+    <hr />
+    <ul>
+      <li><img class="blur5" src="img/background1.jpg" alt="img" /></li>
+      <li><img class="contrast5" src="img/background1.jpg" alt="img" /></li>
+      <li><img class="saturate5" src="img/background1.jpg" alt="img" /></li>
+    </ul>
+  </body>
+</html>
